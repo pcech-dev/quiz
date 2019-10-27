@@ -13,7 +13,7 @@ body {
     background-color: red;
     width: 100%;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 h1 {
@@ -124,6 +124,7 @@ label {
         width: 90%;
         max-width: 1000px;
         margin: 50px auto;
+        border-width: 6px;
     }
 
     img {
