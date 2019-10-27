@@ -11,21 +11,56 @@
 
 <body>
     <main class="container">
-        <header>
-            <h1>Coca Cola Quiz</h1>
-            <h2>What do you know about the most famous soft drink? <br> Test your knowledge in this quiz!</h2>
-            <img src="https://cdn.pixabay.com/photo/2015/06/25/16/56/coca-cola-821512_960_720.jpg"
-                alt="Empty Coca Cola bottle standing in sand on the beach">
-        </header>
+        <section class="header-page">
+            <header>
+                <h1>Coca Cola Quiz</h1>
+                <h2>What do you know about the most famous soft drink? <br> Test your knowledge in this quiz!</h2>
+                <img src="https://cdn.pixabay.com/photo/2015/06/25/16/56/coca-cola-821512_960_720.jpg"
+                    alt="Empty Coca Cola bottle standing in sand on the beach">
+            </header>
+            <button type="button" class="start-button">START NOW</button>
+        </section>
 
-        <section>
-            <button type="button">START NOW</button>
+        <section class="records">
+            <h3>Question: <span class="js-question-number"></span>/7</h3>
+            <h3>Score: <span class="js-score"></span></h3>
+        </section>
+
+        <section class="js-question">
             <form>
-                <ul>
-                    
-                </ul>
+                <fieldset>
+                    <legend></legend>
+                    <label for="radio1"></label>
+                    <label for="radio2"></label>
+                    <label for="radio3"></label>
+                    <label for="radio4"></label>
+                </fieldset>
+                <button type="submit">Submit</button>
             </form>
         </section>
+
+        <section class="correct-answer">
+            <h3>Correct</h3>
+            <img src="https://cdn.pixabay.com/photo/2019/10/19/05/32/coca-cola-4560619_960_720.jpg"
+                alt="two Coca Cola cans standing in sand on the beach" class="correct-img">
+            <button type="button" class="js-next-question">Next</button>
+        </section>
+
+        <section class="wrong-answer">
+            <h3>Wrong</h3>
+            <img src="https://cdn.pixabay.com/photo/2018/03/06/14/24/sand-3203538_960_720.jpg"
+                alt="Rusty old and empty Coca Cola can lying in dirt">
+            <p>Correct answer: <span class="js-hint"></span></p>
+            <button type="button" class="js-next-question">Next</button>
+        </section>
+
+        <section class="final-score">
+            <h3>Final score: <span class="js-score"></span>/7</h3>
+            <p></p>
+            <img>
+            <button type="button" class="js-restart">Want to try again?</button>
+        </section>
+
     </main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
